@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Passcode Gen</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="pw-container">
+            <div class="pw-header">
+                <div class="pw">
+                    <span id="pw"></span>
+                    <button id="copy">Copy</button>
+                </div>
+            </div>
+            <div class="pw-body">
+                <div class="form-control">
+                    <label for="len">Length</label>
+                    <input id="len" value="0" type="number" min="5" max="30" />
+                </div>
+                <div class="form-control">
+                    <label for="upper">Include Uppercase Letters</label>
+                    <input id="upper" type="checkbox" />
+                </div>
+                <div class="form-control">
+                    <label for="lower">Include Lowercase Letters</label>
+                    <input id="lower" type="checkbox" />
+                </div>
+                <div class="form-control">
+                    <label for="number">Include Numbers</label>
+                    <input id="number" type="checkbox" />
+                </div>
+                <div class="form-control">
+                    <label for="symbol">Include Symbols</label>
+                    <input id="symbol" type="checkbox" />
+                </div>
+                <button class="generate" id="generate">Generate</button>
+            </div>
+        </div>
+    </body>
+</html>
